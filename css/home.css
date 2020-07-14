@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     display: grid;
     width: 100%;
@@ -89,15 +93,34 @@
 }
 
 .topic {
-    border: tomato solid 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
+.highlight {
+    display: grid;
+    height: 60%;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 10px;
+}
+
+.highlight-image {
+    background-image: url(../image/world-cool.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.highlight-text {
+    margin-left: 1em;
+}
+
 .blog-list {
-    border: burlywood solid 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -105,7 +128,11 @@
 }
 
 .blog {
-    border: red solid 2px;
+    padding: 1em;
+    width: 20%;
+    height: 60%;
+    box-shadow: 2px 2px 5px 6px #ccc;
+    border-radius: 10px;
 }
 
 .footer {
